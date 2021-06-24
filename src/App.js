@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 //COMPONENTES
 import Header from './components/Header/Header';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 class App extends Component {
 	render() {

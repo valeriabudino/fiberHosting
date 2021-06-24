@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-//import './CartWidget.css';
-import { Icon } from 'semantic-ui-react';
+import React from 'react'
+import { Header, Icon } from 'semantic-ui-react'
 
-class CartWidget extends Component {
-	render() {
-		return (
-				<i class="shopping cart"></i>
-		);
-	}
-}
+const CartWidget = () => (
+  <Header as='h2'>
+    <Icon.Group size='small'>
+      <Icon name='shopping cart'/>
+    </Icon.Group>
+  </Header>
+)
 
-export default CartWidget;
+export default CartWidget
