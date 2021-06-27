@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 //COMPONENTES
 import Header from './components/Header/Header';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 
-class App extends Component {
-	render() {
-		return (
+function App() {
+
+	return (
 			<div className='App'>
 				<Header />
-				<ItemListContainer nombre = {' Amigo'} />
+				<ItemListContainer nombre = {'Productos'} />
+				
 			</div>
-		);
-	}
+	);
 }
 
 export default App;

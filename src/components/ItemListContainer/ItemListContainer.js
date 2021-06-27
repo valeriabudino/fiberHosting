@@ -1,6 +1,7 @@
 import React from 'react';
 import './ItemListContainer.css'
 import ItemCount from  '../ItemCount/ItemCount';
+import ItemList from '../ItemList/ItemList';
 
 
 function ItemListContainer({ nombre }) {
@@ -8,6 +9,7 @@ function ItemListContainer({ nombre }) {
 		<div className="itemList-container">
 			<h4>Hola, {nombre}!!</h4>
 			<ItemCount />
+			<ItemList />
 		</div>
 	);
 }
