@@ -19,9 +19,8 @@ const ItemList = () => {
     }, []);
   
     return(
-        <div>
-            <Item items={items} />
-        </div>
+                <Item items={items} /> 
+    
     );
 }
 

@@ -10,7 +10,7 @@ function App() {
 	return (
 			<div className='App'>
 				<Header />
-				<ItemListContainer nombre = {'Productos'} />
+				<ItemListContainer seccion = {'Productos'} />
 				
 			</div>
 	);
