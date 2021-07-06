@@ -1,0 +1,14 @@
+.count-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:max-content;
+    background-color: whitesmoke;
+}
+.botones{
+    display: flex;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+}
