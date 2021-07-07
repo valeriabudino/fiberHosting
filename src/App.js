@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Home from './views/Home/Home';
 import About from './views/About/About';
 import Contact from './views/Contact/Contact';
+import ItemDetailView from './views/ItemDetailView/ItemDetailView';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 					<Route path='/' exact component={Home}/>
 					<Route path='/about' component={About}/>
 					<Route path='/contact' component={Contact}/>
+					<Route path='/detail/:id' component={ItemDetailView}/>
 				</Switch>
 			</div>
 		</Router>	

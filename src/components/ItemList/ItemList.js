@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import './ItemList.css';
 import Item from '../Item/Item';
+import { Card } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 
 const ItemList = () => {
     const [items, setItems] = useState([]);
@@ -19,8 +22,19 @@ const ItemList = () => {
     }, []);
   
     return(
-                <Item items={items} /> 
-    
+        <div className="items">
+            {items.map((item) => {
+                return (
+                        <Card.Group>
+                            <div key={item}>
+                                <Link to={`/detail/${item.id}`}>
+                                    <Item item={item} />
+                                </Link>
+                            </div>
+                        </Card.Group>
+                    );
+                })} 
+        </div>
     );
 }
 

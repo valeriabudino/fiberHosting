@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
-const ItemDetailContainer = ( {item} ) =>{
+const ItemDetailContainer = ( {items} ) =>{
 
     const [detail, setDetail] = useState([]);
 
     useEffect(()=>{
  
         setTimeout(()=>{
-            setDetail(item)
+            setDetail()
            
         }, 2000);
 
